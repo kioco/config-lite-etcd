@@ -1,6 +1,6 @@
 {
-  "name": "config-lite",
-  "description": "A super simple & flexible & useful config module.",
+  "name": "config-lite-etcd",
+  "description": "add etcd support for config-lite",
   "version": "1.3.0",
   "main": "index.js",
   "scripts": {
@@ -14,8 +14,10 @@
     "development"
   ],
   "dependencies": {
+    "etcd": "0.0.3",
     "js-yaml": "^3.3.1",
     "merge-descriptors": "^1.0.0",
+    "node-etcd": "^4.2.1",
     "optimist": "^0.6.1",
     "resolve": "~1.1.6"
   },
@@ -26,6 +28,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nswbmw/config-lite.git"
+    "url": "https://github.com/rrfeng/config-lite-etcd.git"
   }
 }
