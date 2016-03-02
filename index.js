@@ -33,6 +33,8 @@ var fileConfig = loadConfig(filename);
 
 var config = merge(fileConfig, etcdConfig, false);
 
+module.exports = config
+
 try {
   module.exports = merge(config, loadConfig('default'), false);
 } catch (e) {}
