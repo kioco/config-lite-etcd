@@ -37,7 +37,7 @@ module.exports = 'test';
 ```
 module.exports = 'production';
 ```
-\====================================
+====================================
 
 ```
 node app
@@ -62,6 +62,15 @@ or:
 ```
 NODE_ENV=production node app --host=localhost --port=3000
 ```
+===================================
+### ETCD:
+
+Three env:
+
+`NODE_USE_ETCD_CONFIG`: `false` Not using etcd.
+`ETCD_HOST`: like `etcd-01:4001,etcd-02:4001,etcd-03:4001`
+`ETCD_APPCFG_PATH`: prefix of config store key, such as `/production/appcfgs`
+`NODE_APP_NAME`: key for the config store: `/${ETCD_APPCFG_PATH}/${NODE_APP_NAME}`
 
 ### Test
 
